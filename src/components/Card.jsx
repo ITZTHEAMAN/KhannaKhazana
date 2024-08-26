@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Card(item) {
+  
     
   return (
     <div className='bg-slate-300 w-60 m-8 my-4 overflow-hidden'>

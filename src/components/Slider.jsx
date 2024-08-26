@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
 import Upperfood from './Upperfood';
+import ShimmerH from './ShimmerH';
 
 function Slider() {
 
@@ -19,6 +20,10 @@ function Slider() {
    setfood(restau);
   
    
+   }
+   if(food.length ===0){
+    return <ShimmerH />
+    
    }
 
   return (

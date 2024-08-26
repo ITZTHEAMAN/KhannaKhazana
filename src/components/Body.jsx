@@ -3,6 +3,7 @@ import React from 'react'
 import Card from './Card';
 import { useEffect,useState } from 'react';
 import Slider from './Slider';
+import ShimmerB from './ShimmerB';
 
 
 
@@ -24,13 +25,18 @@ const [listofrestau,setlistofrestau] = useState([])
   // console.log(json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
 
    
+
    }
+
+  if(listofrestau.length===0) {
+   
+    return <ShimmerB />
+  }
   
   
  
   return (
-
-   
+    
     
     <div className='flex flex-wrap items-center justify-center'>
    

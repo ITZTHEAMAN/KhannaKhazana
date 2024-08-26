@@ -22,7 +22,7 @@ function Slider() {
    }
 
   return (
-    <div className='scroller flex overflow-x-auto'>
+    <div className='scroller flex overflow-x-auto ml-10 mr-10 h-56 '>
         {food.map((item,index)=>(
              <img key={index} src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/"+item.imageId} alt="" />
         

@@ -32,7 +32,7 @@ const [listofrestau,setlistofrestau] = useState([])
 
    
     
-    <div className='flex flex-wrap'>
+    <div className='flex flex-wrap items-center justify-center'>
    
       {listofrestau.map((item,index)=>(
         <Card key={index} item={item}/>

@@ -10,6 +10,7 @@ function App() {
   return (
     <div>
       <Header />
+      <h1 className='font-black ml-10 text-2xl'>What's on your mind?</h1>
      <Slider />
       <Body />
     </div>

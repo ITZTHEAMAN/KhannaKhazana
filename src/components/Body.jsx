@@ -52,16 +52,10 @@ const [search,setsearch] = useState("")
     <>
     <input value={search} onChange={(aman)=>{setsearch(aman.target.value)}} className='m-5' placeholder='Serch....' type="text"  />
     <button onClick={()=>{
-     const filterrest = listofrestau.filter((rest)=> rest.info.name.toLowerCase().includes(search.toLowerCase()))
-      setlistofrestau2(filterrest);
-
-    // const filterrest = listofrestau.filter((rest)=> rest.info.cuisines.toString().toLowerCase().includes(search.toLowerCase()))
-    //  console.log(filterrest);
-    //  if(listofrestau2.length === 0){
       
-    //  }
-    
-    }}>{search.length !== 0 ? "Search" : "All restaurant's"}</button>
+     const filterrest = listofrestau.filter((rest)=> rest.info.name.toLowerCase().includes(search.toLowerCase()) || rest.info.cuisines.toString().toLowerCase().includes(search.toLowerCase()))
+      setlistofrestau2(filterrest)
+}}>{search.length !== 0 ? "Search" : "All restaurant's"}</button>
     <div className='flex flex-wrap items-center justify-center'>
       {listofrestau2.map((item,index)=>(
         <Card key={index} item={item}/>

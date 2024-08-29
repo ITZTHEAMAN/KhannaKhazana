@@ -4,7 +4,7 @@ function Card(item) {
   
     
   return (
-    <div className='bg-slate-300 w-60 m-8 my-4 overflow-hidden'>
+    <div className='bg-slate-300 w-60 m-8 my-4 overflow-hidden hover:scale-90'>
         <span className=''>
         <img className=' pt-1 h-60 border-2 rounded-2xl m-1' src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/"+item.item.info.cloudinaryImageId}  alt="" />
         </span>

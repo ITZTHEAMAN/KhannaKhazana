@@ -16,7 +16,7 @@ function Menulist(item) {
       
       <div className='flex flex-col items-center'>
         <img className='h-28 w-28 rounded-3xl' src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/"+ item.item.card.info.imageId} alt="Food image" />
-      <button className='border-2 rounded text-green-500 bg-slate-50 pl-5 pr-5  m-2'>ADD</button>
+      <button className='border-2 rounded text-green-500 bg-slate-50 pl-5 pr-5  m-2'>ADD+</button>
       </div>
       
      </div>

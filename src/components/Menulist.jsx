@@ -1,8 +1,7 @@
 import React from 'react'
 
 function Menulist(item) {
- console.log(item)
-  
+
   return (
     <div> 
         <div  className='flex flex-col items-center'> 

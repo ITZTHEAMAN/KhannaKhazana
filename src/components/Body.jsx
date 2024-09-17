@@ -4,6 +4,7 @@ import Card from './Card';
 import { useEffect,useState } from 'react';
 import Slider from './Slider';
 import ShimmerB from './ShimmerB';
+import { Link } from 'react-router-dom';
 
 
 
@@ -58,7 +59,7 @@ const [search,setsearch] = useState("")
 }}>{search.length !== 0 ? "Search" : "All restaurant's"}</button>
     <div className='flex flex-wrap items-center justify-center'>
       {listofrestau2.map((item,index)=>(
-        <Card key={index} item={item}/>
+       <Link key={index} to={"./restaurant/"+ item.info.id} > <Card item={item}/></Link>
       ))}
 
     </div>

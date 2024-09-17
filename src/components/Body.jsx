@@ -2,7 +2,6 @@
 import React from 'react'
 import Card from './Card';
 import { useEffect,useState } from 'react';
-import Slider from './Slider';
 import ShimmerB from './ShimmerB';
 import { Link } from 'react-router-dom';
 
@@ -32,12 +31,12 @@ const [search,setsearch] = useState("")
    const restau = json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants
    setlistofrestau(restau);
    setlistofrestau2(restau);
-  // console.log(json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
+  
 
    
 
    }
-   // Searching functionality
+ 
    
    
    

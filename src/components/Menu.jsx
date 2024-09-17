@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { useEffect } from 'react'
 import { useState } from 'react'
-
+import Menulist from './Menulist'
  
 function Menu() {
   const [menu,setmenu] =  useState([])
@@ -19,18 +19,17 @@ function Menu() {
     const menudata =   await mendata.json()
     const meu =  menudata.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards
     setmenu(meu)
-    console.log(meu)
+    // const test =  menudata.data
+    // console.log(test)
     
   }
   
   return (
-    <div> 
-     <h1>restaurant name</h1>
+    <>
+     <h1>restarant name</h1>
+    {menu.map((item)=>(<Menulist item={item} />))}
+    </>
 
-    
-
-     
-    </div>
   )
 }
 

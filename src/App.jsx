@@ -25,7 +25,7 @@ const Routing =  createBrowserRouter([
 },
 {
   path:"/restaurant/:resid",
-  element:<Menu />
+  element: <Menu />
 }
 ])
 

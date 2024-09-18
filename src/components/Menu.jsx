@@ -6,6 +6,12 @@ import Menulist from './Menulist'
  
 function Menu() {
   const [menu,setmenu] =  useState([])
+  const [menu2,setmenu2] =  useState([])
+  const [menu3,setmenu3] =  useState([])
+  const [menu4,setmenu4] =  useState([])
+  const [menu5,setmenu5] =  useState([])
+  const [menu6,setmenu6] =  useState([])
+
   const {resid} = useParams()
   const [restname,setrestname] =  useState("")
   
@@ -23,7 +29,16 @@ function Menu() {
     const test =  menudata
     const name = test.data.cards[0].card.card.text
     setrestname(name)
-    
+    const meu2 =  menudata.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[3].card.card.itemCards
+  setmenu2(meu2)
+  const meu3 =  menudata.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[4].card.card.itemCards
+  setmenu3(meu3)
+  const meu4 =  menudata.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[4].card.card.itemCards
+  setmenu4(meu4)
+  const meu5 =  menudata.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[4].card.card.itemCards
+  setmenu5(meu5)
+  const meu6 =  menudata.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[4].card.card.itemCards
+  setmenu6(meu6)
   }
   
   return (
@@ -34,6 +49,11 @@ function Menu() {
       <hr />
        
        {menu.map((item)=>(<Menulist item={item} />))}
+       {menu2.map((item)=>(<Menulist item={item} />))}
+       {menu3.map((item)=>(<Menulist item={item} />))}
+       {menu4.map((item)=>(<Menulist item={item} />))}
+       {menu5.map((item)=>(<Menulist item={item} />))}
+       {menu6.map((item)=>(<Menulist item={item} />))}
     </div>
     
     
